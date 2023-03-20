@@ -1,0 +1,41 @@
+{
+   "course":{
+    "courseID": 0 ,
+    "courseTitle": "Intro to Courses",
+    "startDate": "01/03/2000" ,
+    "endDate": "31/05/2000",
+    "weeklyContactHours": 10 ,
+    "runningSeason": "Spring",
+    "length": "10 Weeks",
+    "type": "Full-Time",
+    "schools": ["Mathematics", "History", "Engineering", "Liberal Arts"],
+    "proffessor(s)": ["Dr Williams"],
+    "student(s)":["Student1", "student2", "etc"],
+    "totalSeats": 20,
+    "seatsAvailable": 17,
+    "courseDescription": "Focused on explaining courses to the uninitiated",
+    "available": false
+   }, 
+"student":{
+    "studentID": 0,
+    "firstName": "Student",
+    "lastName": "1",
+    "email": "student1@email.com",
+    "school": "Liberal Arts",
+    "currentCourses":["Intro to Courses"],
+    "completedCourses": [],
+    "enrolmentDate": "01/01/2000",
+    "graduationDate": "01/01/2001",
+    "graduated": false
+},
+"professor":{
+    "professorID": 0,
+    "firstName": "Bavalon",
+    "lastName": "Shinlorav",
+    "email": "bavShin@email.com",
+    "school":"Liberal Arts",
+    "courses": ["Intro to Courses"],
+    "idImage": "stockImage",
+    "pre-nominals": "Dr" 
+}
+}
