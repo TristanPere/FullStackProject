@@ -1,0 +1,221 @@
+.courseCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  padding: 1%;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 0 0;
+    justify-content: space-between;
+    height: 40%;
+    width: 90%;
+  }
+  &__title--front {
+    border-radius: 1rem;
+    display: flex;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.5);
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-size: cover;
+    font-weight: bolder;
+    font-size: large;
+    &--1 {
+      background-image: url("../../images/courseCover1.png");
+    }
+    &--2 {
+      background-image: url("../../images/courseCover2.png");
+    }
+    &--3 {
+      background-image: url("../../images/courseCover3.png");
+    }
+    &--4 {
+      background-image: url("../../images/courseCover4.png");
+    }
+    &--5 {
+      background-image: url("../../images/courseCover5.png");
+    }
+    &--6 {
+      background-image: url("../../images/courseCover6.png");
+    }
+    &--7 {
+      background-image: url("../../images/courseCover7.png");
+    }
+    &--8 {
+      background-image: url("../../images/courseCover8.png");
+    }
+    &--9 {
+      background-image: url("../../images/courseCover9.png");
+    }
+    &--10 {
+      background-image: url("../../images/courseCover10.png");
+    }
+    &--11 {
+      background-image: url("../../images/courseCover11.png");
+    }
+    &--12 {
+      background-image: url("../../images/courseCover12.png");
+    }
+    &--13 {
+      background-image: url("../../images/courseCover13.png");
+    }
+  }
+  &--description {
+    font-size: 0.5rem;
+  }
+  &--schools {
+    font-size: 0.5rem;
+  }
+  &--vailability {
+    font-size: 0.5rem;
+  }
+}
+
+.courseCard-Back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  font-size: 0.8rem;
+  &__title--back {
+    border-radius: 1rem;
+    display: flex;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-size: cover;
+    font-weight: bolder;
+    font-size: large;
+    &--1 {
+      background-image: url("../../images/courseCover1.png");
+    }
+    &--2 {
+      background-image: url("../../images/courseCover2.png");
+    }
+    &--3 {
+      background-image: url("../../images/courseCover3.png");
+    }
+    &--4 {
+      background-image: url("../../images/courseCover4.png");
+    }
+    &--5 {
+      background-image: url("../../images/courseCover5.png");
+    }
+    &--6 {
+      background-image: url("../../images/courseCover6.png");
+    }
+    &--7 {
+      background-image: url("../../images/courseCover7.png");
+    }
+    &--8 {
+      background-image: url("../../images/courseCover8.png");
+    }
+    &--9 {
+      background-image: url("../../images/courseCover9.png");
+    }
+    &--10 {
+      background-image: url("../../images/courseCover10.png");
+    }
+    &--11 {
+      background-image: url("../../images/courseCover11.png");
+    }
+    &--12 {
+      background-image: url("../../images/courseCover12.png");
+    }
+    &--13 {
+      background-image: url("../../images/courseCover13.png");
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 0 0;
+    justify-content: space-between;
+  }
+  &--description {
+    padding-left: 1%;
+  }
+  &--schools {
+  }
+  &--dates {
+  }
+  &--professors {
+  }
+  &--foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &--term {
+  }
+}
+.flip-card {
+  width: 15vw;
+  height: 15vw;
+  margin: 0.5%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotatey(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  .courseCard {
+    &--description {
+      font-size: 0.6rem;
+    }
+    &--schools {
+      font-size: 0.6rem;
+    }
+    &--vailability {
+      font-size: 0.6rem;
+    }
+  }
+}
+@media screen and (min-width: 1300px) {
+  .courseCard {
+    &--description {
+      font-size: 0.8rem;
+    }
+    &--schools {
+      font-size: 0.8rem;
+    }
+    &--vailability {
+      font-size: 0.8rem;
+    }
+  }
+}

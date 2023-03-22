@@ -1,12 +1,9 @@
 import "./App.scss"; //rafce to generate new componenets
-import TitleBar from "./Components/TitleBar/titleBar";
-import FilterBar from "./Containers/FilterBar/filterBar";
+import CoursesPage from "./Pages/CoursesPage/coursesPage";
 function App() {
   return (
     <div className="App">
-      <>
-      <TitleBar /></>
-      <FilterBar/>
+      <CoursesPage/>
     </div>
   );
 }
