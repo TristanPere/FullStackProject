@@ -19,7 +19,6 @@ const courseCard = ({ course }) => {
         "courseCard-Back__title--back courseCard-Back__title--back--";
     }
     classNameString = classNameString.concat(num);
-    console.log(classNameString);
     return (
       <div className={classNameString}>
         {course.courseTitle}
@@ -28,9 +27,9 @@ const courseCard = ({ course }) => {
     );
   };
   return (
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
+    <div className="flip-card">
+      <div className="flip-card-inner">
+        <div className="flip-card-front">
           <div className="courseCard">
             {titleJSX(num, "front")}
             <div className="courseCard__info">
@@ -44,7 +43,7 @@ const courseCard = ({ course }) => {
             </div>
           </div>
         </div>
-        <div class="flip-card-back">
+        <div className="flip-card-back">
           <div className="courseCard-Back">
             {titleJSX(num, "back")}
             <div className="courseCard-Back__info">

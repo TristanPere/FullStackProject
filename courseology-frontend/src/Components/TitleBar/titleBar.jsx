@@ -1,10 +1,11 @@
 import "./titleBar.scss";
+import DropDown from "../DropDown/DropDown";
 const titleBar = () => {
   return (
     <>
       <div className="titleBar">
         <header className="titleBar--title">Online Courses Plus</header>
-        <div className="titleBar--Menu">Menu</div>
+        <DropDown/>
       </div>
     </>
   );
