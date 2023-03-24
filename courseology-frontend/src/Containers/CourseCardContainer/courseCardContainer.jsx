@@ -3,16 +3,14 @@ import "./courseCardContainer.scss";
 import CourseCard from "../../Components/CourseCard/CourseCard";
 
 const courseCardContainer = ({ courses }) => {
-  const cardCollectionJSX = () => {
-    let cardCollection = new Array();
-    for (let i = 0; i < 20; i++) {
-      cardCollection[i] = <div key={i}><CourseCard course={courses} /></div>
-    }
-    return cardCollection;
-  };
+
+ const courseCardsJSX = courses.map((course,index)=>{
+      return <div key={course.uuid}><CourseCard course={course}/></div>
+    })
+  
   return (
     <div className="coursesContainer">
-      {cardCollectionJSX()}
+      {courseCardsJSX}
     </div>
   );
 };

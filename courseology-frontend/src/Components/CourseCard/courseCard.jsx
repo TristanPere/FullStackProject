@@ -1,14 +1,18 @@
 import React from "react";
 import "./courseCard.scss";
 const courseCard = ({ course }) => {
-  const schoolListString = course.schools.join(", ");
-  const availableJSX = () => {
-    if (course.available) {
-      return <div className="courseCard--vailability">Available</div>;
-    } else {
-      return <div className="courseCard--vailability">Un-Available</div>;
-    }
-  };
+let schools = course.school[0];
+if(course.school.length>=2){
+  schools = schools + ", "+ course.school[1]
+}
+// console.log(course.school.split())
+  // const availableJSX = () => {
+  //   if (course.available) {
+  //     return <div className="courseCard--vailability">Available</div>;
+  //   } else {
+  //     return <div className="courseCard--vailability">Un-Available</div>;
+  //   }
+  // };
   const num = Math.floor(Math.random() * 13 + 1);
   const titleJSX = (num, side) => {
     let classNameString = "";
@@ -22,7 +26,6 @@ const courseCard = ({ course }) => {
     return (
       <div className={classNameString}>
         {course.courseTitle}
-        {num}
       </div>
     );
   };
@@ -34,12 +37,12 @@ const courseCard = ({ course }) => {
             {titleJSX(num, "front")}
             <div className="courseCard__info">
               <div className="courseCard--description">
-                {course.courseDescription}
+                {course.description}
               </div>
               <div className="courseCard--schools">
-                Schools: {schoolListString}
+                Schools: {schools}
               </div>
-              {availableJSX()}
+              {/* {availableJSX()} */}
             </div>
           </div>
         </div>
@@ -48,22 +51,22 @@ const courseCard = ({ course }) => {
             {titleJSX(num, "back")}
             <div className="courseCard-Back__info">
               <div className="courseCard-Back--description">
-                {course.courseDescription}
+                {course.description}
               </div>
               <div className="courseCard-Back--dates">
                 Start Date: {course.startDate} <br /> End Date: {course.endDate}
               </div>
               <div className="courseCard-Back--professors">
-                Professor(s): {course.proffessors}
+                Professor(s): {course.proffessor}
               </div>
               <div className="courseCard-Back--schools">
-                Schools: {schoolListString}
+                Schools: {schools}
               </div>
               <div className="courseCard-Back--foot">
                 <div className="courseCard-Back--term">
                   {course.season}: {course.type}
                 </div>
-                {availableJSX()}
+                {/* {availableJSX()} */}
               </div>
             </div>
           </div>
