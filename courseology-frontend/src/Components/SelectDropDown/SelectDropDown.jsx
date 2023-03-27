@@ -1,12 +1,15 @@
 import React from "react";
-import { mockData } from "../../database";
+import { mockcourse } from "../../courseJSON";
 import "./SelectDropDown.scss";
 const selectDropDown = ({ type }) => {
   const terms = ["Spring", "Summer", "Autumn", "Winter"];
   let optionsJSX;
   let placeholderJSX;
   if (type == "school") {
-    optionsJSX = mockData.course.schools.map((school, index) => {
+    const schools = mockcourse.courses.map((course)=>{
+      return course.school
+    })
+    optionsJSX = [...new Set(schools.join(",").split(","))].map((school, index) => {
       const id = `${school}${index}`;
       return (
         <option value={school} key={id}>

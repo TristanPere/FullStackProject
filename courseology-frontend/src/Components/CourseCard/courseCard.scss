@@ -75,6 +75,9 @@
   &--vailability {
     font-size: 0.5rem;
   }
+  &--dates{
+    font-size: 0.5rem;
+  }
 }
 
 .courseCard-Back {
@@ -161,10 +164,12 @@
   &--term {
   }
 }
+
 .flip-card {
   width: 15vw;
   height: 15vw;
   margin: 0.5%;
+  margin-bottom: 1rem;
 }
 
 .flip-card-inner {
@@ -176,7 +181,7 @@
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotatey(180deg);
+  transform: rotateY(180deg);
 }
 
 .flip-card-front,
@@ -188,11 +193,11 @@
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
-
 /* Style the back side */
 .flip-card-back {
   transform: rotateY(180deg);
 }
+
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
   .courseCard {
     &--description {
@@ -202,6 +207,9 @@
       font-size: 0.6rem;
     }
     &--vailability {
+      font-size: 0.6rem;
+    }
+    &--dates{
       font-size: 0.6rem;
     }
   }
@@ -215,6 +223,9 @@
       font-size: 0.8rem;
     }
     &--vailability {
+      font-size: 0.8rem;
+    }
+    &--dates{
       font-size: 0.8rem;
     }
   }

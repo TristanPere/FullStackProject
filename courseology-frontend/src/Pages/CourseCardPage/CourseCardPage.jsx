@@ -10,14 +10,13 @@ const CourseCardPage = () => {
   //     return <div className="courseCard--vailability">Un-Available</div>;
   //   }
   // };
- 
+  const weeksOfCourse = () => {
+    return Math.ceil(Math.abs(new Date(course.endDate) - new Date(course.startDate)) / (1000 * 60 * 60 * 24 * 7))
+  }
   const course = mockData.course;
    const schools = course.school.join(", ");
   return (
     <>
-      {/* <div>
-        <CourseCard course={course} />
-      </div> */}
       <div>
         <h1 className="courseTitle">{course.courseTitle}</h1>
         <div className="courseHours">

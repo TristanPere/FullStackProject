@@ -1,18 +1,26 @@
 import React from "react";
 import "./courseCard.scss";
 const courseCard = ({ course }) => {
-let schools = course.school[0];
-if(course.school.length>=2){
-  schools = schools + ", "+ course.school[1]
-}
-// console.log(course.school.split())
-  // const availableJSX = () => {
-  //   if (course.available) {
-  //     return <div className="courseCard--vailability">Available</div>;
-  //   } else {
-  //     return <div className="courseCard--vailability">Un-Available</div>;
-  //   }
-  // };
+  let schools = course.school[0];
+  if (course.school.length >= 2) {
+    schools = schools + ", " + course.school[1];
+  }
+  const validDate = () => {
+    const today = new Date();
+    let courseDate = course.startDate.split("-");
+    courseDate = new Date(courseDate)
+    return courseDate>today;
+  };
+  const weeksOfCourse = () => {
+    return Math.ceil(Math.abs(new Date(course.endDate) - new Date(course.startDate)) / (1000 * 60 * 60 * 24 * 7))
+  }
+  const availableJSX = () => {
+    if (course.totalSeats > course.seatsFilled && validDate()) {
+      return <div className="courseCard--vailability">Available</div>;
+    } else {
+      return <div className="courseCard--vailability">Un-Available</div>;
+    }
+  };
   const num = Math.floor(Math.random() * 13 + 1);
   const titleJSX = (num, side) => {
     let classNameString = "";
@@ -23,11 +31,7 @@ if(course.school.length>=2){
         "courseCard-Back__title--back courseCard-Back__title--back--";
     }
     classNameString = classNameString.concat(num);
-    return (
-      <div className={classNameString}>
-        {course.courseTitle}
-      </div>
-    );
+    return <div className={classNameString}>{course.courseTitle}</div>;
   };
   return (
     <div className="flip-card">
@@ -36,13 +40,11 @@ if(course.school.length>=2){
           <div className="courseCard">
             {titleJSX(num, "front")}
             <div className="courseCard__info">
-              <div className="courseCard--description">
-                {course.description}
+              <div className="courseCard--schools">Schools: {schools}</div>
+              <div className="courseCard--dates">
+                Start Date: {course.startDate} <br /> End Date: {course.endDate}
               </div>
-              <div className="courseCard--schools">
-                Schools: {schools}
-              </div>
-              {/* {availableJSX()} */}
+              {availableJSX()}
             </div>
           </div>
         </div>
@@ -57,16 +59,14 @@ if(course.school.length>=2){
                 Start Date: {course.startDate} <br /> End Date: {course.endDate}
               </div>
               <div className="courseCard-Back--professors">
-                Professor(s): {course.proffessor}
+                Professor(s): {course.professor}
               </div>
-              <div className="courseCard-Back--schools">
-                Schools: {schools}
-              </div>
+              <div className="courseCard-Back--schools">Schools: {schools}</div>
               <div className="courseCard-Back--foot">
                 <div className="courseCard-Back--term">
-                  {course.season}: {course.type}
+                  {course.season}: {course.studyType.slice(0,1).toUpperCase() + course.studyType.slice(1)} {weeksOfCourse()} Weeks
                 </div>
-                {/* {availableJSX()} */}
+                {availableJSX()}
               </div>
             </div>
           </div>
