@@ -1,7 +1,8 @@
 package com.example.Java_SpringBoot_Backend;
 
 
-import jakarta.annotation.PostConstruct;
+
+import javax.annotation.PostConstruct;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -37,7 +38,6 @@ public class CourseInitializer {
             for (Object course : jsonArray) {
                 JSONObject coursesJSON = (JSONObject) course;
 
-                long id = (long) coursesJSON.get("id");
                 String courseTitle = (String) coursesJSON.get("courseTitle");
                 String professor = (String) coursesJSON.get("professor");
                 LocalDate startDate = LocalDate.parse((String) coursesJSON.get("startDate"));
@@ -45,9 +45,9 @@ public class CourseInitializer {
                 String season = (String) coursesJSON.get("season");
                 String description = (String) coursesJSON.get("description");
                 String studyType = (String) coursesJSON.get("studyType");
-                int totalSeats = (int) coursesJSON.get("totalSeats");
-                int seatsFilled = (int) coursesJSON.get("seatsFilled");
-                int contactHours = (int) coursesJSON.get("contactHours");
+                long totalSeats = (long) coursesJSON.get("totalSeats");
+                long seatsFilled = (long) coursesJSON.get("seatsFilled");
+                long contactHours = (long) coursesJSON.get("contactHours");
                 ArrayList<String> schools = (ArrayList<String>) coursesJSON.get("schools");
 
                 // HOW CAN WE USE THIS DATA?

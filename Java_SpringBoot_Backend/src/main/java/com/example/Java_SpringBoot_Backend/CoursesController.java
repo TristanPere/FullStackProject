@@ -7,45 +7,47 @@ import java.util.List;
 @RestController
 public class CoursesController {
     @Autowired
-    CoursesRepository coursesRepository;
+    CoursesServices coursesServices;
 
     // CREATE
-    @PostMapping("/greeting")
-    public Course createGreeting(@RequestBody Course greeting) {
-        coursesRepository.addCourse(greeting);
-        return greeting;
+    @PostMapping("/addCourse")
+    public Course createCourse(@RequestBody Course course) {
+        coursesServices.addCourse(course);
+        return course;
     }
     // READ
 
-    @GetMapping("/greet")
-    public String greet() {
-        return "Hello World!";
+    @GetMapping("/course")
+    public Course greet() {
+        return coursesServices.getRandomCourse();
     }
 
-    @GetMapping("/greetings")
-    public List<Course> getGreetings() {
-        return coursesRepository.getCourses();
+    @GetMapping("/courses")
+    public List<Course> getGreetings( @RequestParam(required = false, defaultValue = "10") long limit) {
+        return coursesServices.getAllCourses(limit);
     }
 
-    @GetMapping("/greeting/random")
+    @GetMapping("/course/random")
     public Course getRandomGreeting() {
-        return coursesRepository.getRandomCourse();
+        return coursesServices.getRandomCourse();
     }
 
-    @GetMapping("greeting/{id}")
+    @GetMapping("course/{uuid}")
     public Course getGreetingById(@PathVariable String uuid) {
-        return coursesRepository.getCourseByStringUUID(uuid);
+        return coursesServices.getCourseByStringUUID(uuid);
     }
 
     // UPDATE
-//    @PutMapping("/updateGreeting/{id}")
-//    public Greeting updateGreetingById(@RequestBody Greeting greeting , @PathVariable long id) {
-//        return coursesRepository.updateGreetingByID(greeting, id);
-//    }
+    @PutMapping("/updateCourse/{UUID}")
+    public Course updateGreetingById(@RequestBody Course newCourse , @PathVariable long id) {
+        String uuid = String.valueOf(id);
+        coursesServices.updateCourseByUUID(newCourse, uuid);
+        return getGreetingById(uuid);
+    }
     // DELETE
 
-    @DeleteMapping("/greeting/{id}")
-    public boolean deleteGreetingById(@PathVariable String uuid) {
-        return coursesRepository.deleteCourseByUUID(uuid);
+    @DeleteMapping("/course/{id}")
+    public boolean deleteCourseByUUID(@PathVariable String uuid) {
+        return coursesServices.deleteCourseByUUID(uuid);
     }
 }

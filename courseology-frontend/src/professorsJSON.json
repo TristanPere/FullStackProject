@@ -1,1 +1,219 @@
-{"professors":[{"id":"316dd21e-b22c-a525-7738-fc71cebf05eb","firstName":"Jane","lastName":"Smith","email":"smiJan@onlineC+.edu","school":"Computer Science","courses":["Introduction to Computer Science"],"idImage":"","pre_nominals":"Dr."},{"id":"47e12fa4-c8c6-c7b9-8c66-643eeb63c411","firstName":"John","lastName":"Doe","email":"doeJoh@onlineC+.edu","school":"Business","courses":["Marketing Fundamentals"],"idImage":"","pre_nominals":"Dr."},{"id":"10abeb32-50f8-4b2c-ffe6-9dc0fc3a9a21","firstName":"Sarah","lastName":"Lee","email":"leeSar@onlineC+.edu","school":"Business","courses":["Financial Accounting","Green Energy Technologies","Artificial Intelligence Ethics"],"idImage":"","pre_nominals":"Dr."},{"id":"3cfa19bf-f015-e40d-c556-7bdc5503be04","firstName":"Emily","lastName":"Johnson","email":"johEmi@onlineC+.edu","school":"Arts and Humanities","courses":["Creative Writing Workshop"],"idImage":"","pre_nominals":"Prof."},{"id":"d4b14802-0a23-5018-408e-f1bc9db2cb39","firstName":"Robert","lastName":"Johnson","email":"johRob@onlineC+.edu","school":"Computer Science","courses":["Artificial Intelligence"],"idImage":"","pre_nominals":"Dr."},{"id":"2025b684-f7c6-eceb-41fd-3db10489a9a1","firstName":"Elizabeth","lastName":"Kim","email":"kimEli@onlineC+.edu","school":"Business","courses":["International Business"],"idImage":"","pre_nominals":"Dr."},{"id":"846a1b38-2f75-a57c-1290-d403592ef95c","firstName":"Michael","lastName":"Lee","email":"leeMic@onlineC+.edu","school":"Chemistry","courses":["Organic Chemistry","Robotics Engineering"],"idImage":"","pre_nominals":"Dr."},{"id":"12e45029-d917-1a19-e2f5-07a182d877ad","firstName":"James","lastName":"Smith","email":"smiJam@onlineC+.edu","school":"Mathematics","courses":["Applied Statistics"],"idImage":"","pre_nominals":"Dr."},{"id":"d5e96ec2-8a68-386c-a110-0c0f2c4d7cbd","firstName":"Jane","lastName":"Adams","email":"adaJan@onlineC+.edu","school":"Biology","courses":["Environmental Science"],"idImage":"","pre_nominals":"Dr."},{"id":"c67a7847-161a-3ca7-9e09-972defd123a5","firstName":"David","lastName":"Kim","email":"kimDav@onlineC+.edu","school":"Business","courses":["Digital Marketing"],"idImage":"","pre_nominals":"Dr."},{"id":"96d2e31f-fe12-80b2-ff7f-b413f884da23","firstName":"Maria","lastName":"Hernandez","email":"herMar@onlineC+.edu","school":"Mathematics","courses":["Applied Mathematics"],"idImage":"","pre_nominals":"Dr."},{"id":"95714776-34b8-d603-f441-19103210c881","firstName":"Sarah","lastName":"Johnson","email":"johSar@onlineC+.edu","school":"Social Sciences","courses":["Social Psychology"],"idImage":"","pre_nominals":"Dr."},{"id":"b95baf0e-daf9-bb8a-0ba1-b976448bda5a","firstName":"Elizabeth","lastName":"Smith","email":"smiEli@onlineC+.edu","school":"Psychology","courses":["Cognitive Neuroscience"],"idImage":"","pre_nominals":"Dr."},{"id":"1ef87e15-46cd-b063-def6-5678927cb2d6","firstName":"John","lastName":"Davis","email":"davJoh@onlineC+.edu","school":"International Studies","courses":["International Relations"],"idImage":"","pre_nominals":"Dr."},{"id":"43c10dee-e3ff-b369-e169-2b154513ddb0","firstName":"Richard","lastName":"Johnson","email":"johRic@onlineC+.edu","school":"Computer Science","courses":["Data Mining and Machine Learning"],"idImage":"","pre_nominals":"Dr."},{"id":"73c16d09-fe7f-ad5a-4355-9ea33900874b","firstName":"Laura","lastName":"Kim","email":"kimLau@onlineC+.edu","school":"Art","courses":["Contemporary Art History"],"idImage":"","pre_nominals":"Dr."},{"id":"0372144f-38f8-9603-62a5-25cfc26ac062","firstName":"Mark","lastName":"Chen","email":"cheMar@onlineC+.edu","school":"Computer Science","courses":["Human-Computer Interaction"],"idImage":"","pre_nominals":"Dr."},{"id":"39e5659f-7791-b663-6ee7-9cddade3a5b2","firstName":"James","lastName":"Brown","email":"broJam@onlineC+.edu","school":"Physics and Astronomy","courses":["Introduction to Astrophysics"],"idImage":"","pre_nominals":"Dr."},{"id":"243da489-44d8-092e-b1ac-04aeb5b67def","firstName":"John","lastName":"Smith","email":"smiJoh@onlineC+.edu","school":"Business","courses":["Introduction to Finance"],"idImage":"","pre_nominals":"Dr."},{"id":"5ce831cc-a75e-9dcd-b265-bc01533da2b9","firstName":"Maria","lastName":"Garcia","email":"garMar@onlineC+.edu","school":"Computer Science","courses":["Data Science with Python"],"idImage":"","pre_nominals":"Dr."},{"id":"a688dc77-aa81-a42f-ebbf-9ae1eb493305","firstName":"Jane","lastName":"Lee","email":"leeJan@onlineC+.edu","school":"Humanities","courses":["World History"],"idImage":"","pre_nominals":"Dr."}]}
+
+{
+  "professors": [
+    {
+      "id": "316dd21e-b22c-a525-7738-fc71cebf05eb",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "smiJan@onlineC+.edu",
+      "school": "Computer Science",
+      "courses": ["Introduction to Computer Science"],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    },
+    {
+      "id": "47e12fa4-c8c6-c7b9-8c66-643eeb63c411",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "doeJoh@onlineC+.edu",
+      "school": "Business",
+      "courses": ["Marketing Fundamentals"],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    },
+    {
+      "id": "10abeb32-50f8-4b2c-ffe6-9dc0fc3a9a21",
+      "firstName": "Sarah",
+      "lastName": "Lee",
+      "email": "leeSar@onlineC+.edu",
+      "school": "Business",
+      "courses": [
+        "Financial Accounting",
+        "Green Energy Technologies",
+        "Artificial Intelligence Ethics"
+      ],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    },
+    {
+      "id": "3cfa19bf-f015-e40d-c556-7bdc5503be04",
+      "firstName": "Emily",
+      "lastName": "Johnson",
+      "email": "johEmi@onlineC+.edu",
+      "school": "Arts and Humanities",
+      "courses": ["Creative Writing Workshop"],
+      "idImage": "",
+      "pre_nominals": "Prof."
+    },
+    {
+      "id": "d4b14802-0a23-5018-408e-f1bc9db2cb39",
+      "firstName": "Robert",
+      "lastName": "Johnson",
+      "email": "johRob@onlineC+.edu",
+      "school": "Computer Science",
+      "courses": ["Artificial Intelligence"],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    },
+    {
+      "id": "2025b684-f7c6-eceb-41fd-3db10489a9a1",
+      "firstName": "Elizabeth",
+      "lastName": "Kim",
+      "email": "kimEli@onlineC+.edu",
+      "school": "Business",
+      "courses": ["International Business"],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    },
+    {
+      "id": "846a1b38-2f75-a57c-1290-d403592ef95c",
+      "firstName": "Michael",
+      "lastName": "Lee",
+      "email": "leeMic@onlineC+.edu",
+      "school": "Chemistry",
+      "courses": ["Organic Chemistry", "Robotics Engineering"],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    },
+    {
+      "id": "12e45029-d917-1a19-e2f5-07a182d877ad",
+      "firstName": "James",
+      "lastName": "Smith",
+      "email": "smiJam@onlineC+.edu",
+      "school": "Mathematics",
+      "courses": ["Applied Statistics"],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    },
+    {
+      "id": "d5e96ec2-8a68-386c-a110-0c0f2c4d7cbd",
+      "firstName": "Jane",
+      "lastName": "Adams",
+      "email": "adaJan@onlineC+.edu",
+      "school": "Biology",
+      "courses": ["Environmental Science"],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    },
+    {
+      "id": "c67a7847-161a-3ca7-9e09-972defd123a5",
+      "firstName": "David",
+      "lastName": "Kim",
+      "email": "kimDav@onlineC+.edu",
+      "school": "Business",
+      "courses": ["Digital Marketing"],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    },
+    {
+      "id": "96d2e31f-fe12-80b2-ff7f-b413f884da23",
+      "firstName": "Maria",
+      "lastName": "Hernandez",
+      "email": "herMar@onlineC+.edu",
+      "school": "Mathematics",
+      "courses": ["Applied Mathematics"],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    },
+    {
+      "id": "95714776-34b8-d603-f441-19103210c881",
+      "firstName": "Sarah",
+      "lastName": "Johnson",
+      "email": "johSar@onlineC+.edu",
+      "school": "Social Sciences",
+      "courses": ["Social Psychology"],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    },
+    {
+      "id": "b95baf0e-daf9-bb8a-0ba1-b976448bda5a",
+      "firstName": "Elizabeth",
+      "lastName": "Smith",
+      "email": "smiEli@onlineC+.edu",
+      "school": "Psychology",
+      "courses": ["Cognitive Neuroscience"],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    },
+    {
+      "id": "1ef87e15-46cd-b063-def6-5678927cb2d6",
+      "firstName": "John",
+      "lastName": "Davis",
+      "email": "davJoh@onlineC+.edu",
+      "school": "International Studies",
+      "courses": ["International Relations"],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    },
+    {
+      "id": "43c10dee-e3ff-b369-e169-2b154513ddb0",
+      "firstName": "Richard",
+      "lastName": "Johnson",
+      "email": "johRic@onlineC+.edu",
+      "school": "Computer Science",
+      "courses": ["Data Mining and Machine Learning"],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    },
+    {
+      "id": "73c16d09-fe7f-ad5a-4355-9ea33900874b",
+      "firstName": "Laura",
+      "lastName": "Kim",
+      "email": "kimLau@onlineC+.edu",
+      "school": "Art",
+      "courses": ["Contemporary Art History"],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    },
+    {
+      "id": "0372144f-38f8-9603-62a5-25cfc26ac062",
+      "firstName": "Mark",
+      "lastName": "Chen",
+      "email": "cheMar@onlineC+.edu",
+      "school": "Computer Science",
+      "courses": ["Human-Computer Interaction"],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    },
+    {
+      "id": "39e5659f-7791-b663-6ee7-9cddade3a5b2",
+      "firstName": "James",
+      "lastName": "Brown",
+      "email": "broJam@onlineC+.edu",
+      "school": "Physics and Astronomy",
+      "courses": ["Introduction to Astrophysics"],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    },
+    {
+      "id": "243da489-44d8-092e-b1ac-04aeb5b67def",
+      "firstName": "John",
+      "lastName": "Smith",
+      "email": "smiJoh@onlineC+.edu",
+      "school": "Business",
+      "courses": ["Introduction to Finance"],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    },
+    {
+      "id": "5ce831cc-a75e-9dcd-b265-bc01533da2b9",
+      "firstName": "Maria",
+      "lastName": "Garcia",
+      "email": "garMar@onlineC+.edu",
+      "school": "Computer Science",
+      "courses": ["Data Science with Python"],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    },
+    {
+      "id": "a688dc77-aa81-a42f-ebbf-9ae1eb493305",
+      "firstName": "Jane",
+      "lastName": "Lee",
+      "email": "leeJan@onlineC+.edu",
+      "school": "Humanities",
+      "courses": ["World History"],
+      "idImage": "",
+      "pre_nominals": "Dr."
+    }
+  ]
+}

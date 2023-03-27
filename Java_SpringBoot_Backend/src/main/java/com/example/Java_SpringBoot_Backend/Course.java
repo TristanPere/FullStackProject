@@ -14,13 +14,13 @@ public class Course {
     private String season;
     private String description;
     private String studyType;
-    private  int totalSeats;
-    private int seatsFilled;
-    private int contactHours;
+    private  long totalSeats;
+    private long seatsFilled;
+    private long contactHours;
     private ArrayList<String> schools;
     private ArrayList<String> students;
 
-    public Course(String courseTitle, String professor, LocalDate startDate, LocalDate endDate, String season, String description, String studyType, int totalSeats, int seatsFilled, int contactHours, ArrayList<String> schools ) {
+    public Course(String courseTitle, String professor, LocalDate startDate, LocalDate endDate, String season, String description, String studyType, long totalSeats, long seatsFilled, long contactHours, ArrayList<String> schools ) {
         this.courseTitle = courseTitle;
         this.professor = professor;
         this.startDate = startDate;
@@ -102,27 +102,27 @@ public class Course {
         this.studyType = studyType;
     }
 
-    public int getTotalSeats() {
+    public long getTotalSeats() {
         return totalSeats;
     }
 
-    public void setTotalSeats(int totalSeats) {
+    public void setTotalSeats(long totalSeats) {
         this.totalSeats = totalSeats;
     }
 
-    public int getSeatsFilled() {
+    public long getSeatsFilled() {
         return seatsFilled;
     }
 
-    public void setSeatsFilled(int seatsFilled) {
+    public void setSeatsFilled(long seatsFilled) {
         this.seatsFilled = seatsFilled;
     }
 
-    public int getContactHours() {
+    public long getContactHours() {
         return contactHours;
     }
 
-    public void setContactHours(int contactHours) {
+    public void setContactHours(long contactHours) {
         this.contactHours = contactHours;
     }
 

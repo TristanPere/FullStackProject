@@ -15,7 +15,7 @@ public class CoursesRepository {
         return course;
     }
 
-    public ArrayList<Course> getCourses() {
+    public ArrayList<Course> getAllCourses() {
         return courses;
     }
 //READ
@@ -28,9 +28,29 @@ public class CoursesRepository {
         }
         return null;
     }
+    public Boolean hasCourseByStringUUID(String uuid) {
+        for (Course course : courses
+        ) {
+            if (course.getStringUUID() == uuid) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
     public Course getRandomCourse() {
         Random random = new Random();
         return courses.get(random.nextInt(courses.size()));
+    }
+    //update
+    public void updateGreeting(Course newCourse, String uuid){
+        for (int i = 0; i < courses.size(); i++) {
+            if(courses.get(i).getStringUUID() == uuid){
+                courses.set(i, newCourse);
+                return;
+            }
+        }
     }
     //DELETE
     public boolean deleteCourseByUUID(String uuid) {

@@ -35,6 +35,7 @@ const dataGenerator = () => {
         };
       }
       console.log(professors);
+
   return (
     <div>dataGenerator</div>
   )
