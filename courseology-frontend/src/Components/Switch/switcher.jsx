@@ -1,9 +1,7 @@
 import React from "react";
 import "./switcher.scss"
-const switcher = () => {
-  const handleSwitch = (event)=>{
-    console.log(event.target.checked) //returns true or false
-  }
+const switcher = ({handleSwitch}) => {
+  
   return (
     <div>
        Full-time

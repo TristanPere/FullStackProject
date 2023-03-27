@@ -1,7 +1,7 @@
 import React from "react";
 import { mockcourse } from "../../courseJSON";
 import "./SelectDropDown.scss";
-const selectDropDown = ({ type }) => {
+const selectDropDown = ({ type , handleFilter }) => {
   const terms = ["Spring", "Summer", "Autumn", "Winter"];
   let optionsJSX;
   let placeholderJSX;
@@ -39,7 +39,7 @@ const selectDropDown = ({ type }) => {
   }
   return (
     <div>
-      <select>
+      <select onChange={handleFilter}>
         {placeholderJSX}
         {optionsJSX}
       </select>
