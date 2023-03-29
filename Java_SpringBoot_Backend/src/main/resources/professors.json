@@ -1,0 +1,213 @@
+[
+  {
+    "fullName": "Dr. Jane Smith",
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "email": "smiJan@onlineC+.edu",
+    "school": "School of Computer Science",
+    "courses": "Introduction to Computer Science",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+    "fullName": "Dr. John Doe",
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "doeJoh@onlineC+.edu",
+    "school": "School of Business",
+    "courses": "Marketing Fundamentals",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+    "fullName": "Dr. Sarah Lee",
+    "firstName": "Sarah",
+    "lastName": "Lee",
+    "email": "leeSar@onlineC+.edu",
+    "school": "School of Green Energy Technologies",
+    "courses": "Financial Accounting",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+    "fullName": "Prof Emily Johnson",
+    "firstName": "Emily",
+    "lastName": "Johnson",
+    "email": "johEmi@onlineC+.edu",
+    "school": "School of Arts and Humanities",
+    "courses": "Creative Writing Workshop",
+    "pre_nominals": "Prof.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+    "fullName": "Dr. Robert Johnson",
+    "firstName": "Robert",
+    "lastName": "Johnson",
+    "email": "johRob@onlineC+.edu",
+    "school": "School of Computer Science",
+    "courses": "Artificial Intelligence",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+    "fullName": "Dr. Elizabeth Kim",
+    "firstName": "Elizabeth",
+    "lastName": "Kim",
+    "email": "kimEli@onlineC+.edu",
+    "school": "School of Business",
+    "courses":"International Business",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+    "fullName": "Dr. Michael Lee",
+    "firstName": "Michael",
+    "lastName": "Lee",
+    "email": "leeMic@onlineC+.edu",
+    "school": "School of Chemistry",
+    "courses":"School of Organic Chemistry",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+    "fullName": "Dr. James Smith",
+    "firstName": "James",
+    "lastName": "Smith",
+    "email": "smiJam@onlineC+.edu",
+    "school": "School of Mathematics",
+    "courses":"Applied Statistics",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+
+    "fullName": "Dr. Jane Adams",
+    "firstName": "Jane",
+    "lastName": "Adams",
+    "email": "adaJan@onlineC+.edu",
+    "school": "School of Biology",
+    "courses":"Environmental Science",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+    "fullName": "Dr. David Kim",
+    "firstName" : "David",
+    "lastName": "Kim",
+    "email": "kimDav@onlineC+.edu",
+    "school": "School of Business",
+    "courses":"Digital Marketing",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+    "fullName": "Dr. Maria Hernandez",
+    "firstName": "Maria",
+    "lastName": "Hernandez",
+    "email": "herMar@onlineC+.edu",
+    "school": "School of Mathematics",
+    "courses":"Applied Mathematics",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+    "fullName": "Dr. Sarah Johnson",
+    "firstName": "Sarah",
+    "lastName": "Johnson",
+    "email": "johSar@onlineC+.edu",
+    "school": "School of Social Sciences",
+    "courses":"Social Psychology",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+    "fullName": "Dr. Elizabeth Smith",
+    "firstName": "Elizabeth",
+    "lastName": "Smith",
+    "email": "smiEli@onlineC+.edu",
+    "school": "School of Psychology",
+    "courses":"Cognitive Neuroscience",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+    "fullName": "Dr. John Davis",
+    "firstName": "John",
+    "lastName": "Davis",
+    "email": "davJoh@onlineC+.edu",
+    "school": "School of International Studies",
+    "courses":"International Relations",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+    "fullName": "Dr. Richard Johnson",
+    "firstName": "Richard",
+    "lastName": "Johnson",
+    "email": "johRic@onlineC+.edu",
+    "school": "School of Computer Science",
+    "courses":"Data Mining and Machine Learning",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+    "fullName": "Dr. Laura Kim",
+    "firstName": "Laura",
+    "lastName": "Kim",
+    "email": "kimLau@onlineC+.edu",
+    "school": "School of Art",
+    "courses":"Contemporary Art History",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+    "fullName": "Dr. Mark Chen",
+    "firstName": "Mark",
+    "lastName": "Chen",
+    "email": "cheMar@onlineC+.edu",
+    "school": "School of Computer Science",
+    "courses":"Human-Computer Interaction",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+    "fullName": "Dr. James Brown",
+    "firstName": "James",
+    "lastName": "Brown",
+    "email": "broJam@onlineC+.edu",
+    "school": "School of Physics and Astronomy",
+    "courses":"Introduction to Astrophysics",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+    "fullName": "Dr. John Smith",
+    "firstName": "John",
+    "lastName": "Smith",
+    "email": "smiJoh@onlineC+.edu",
+    "school": "School of Business",
+    "courses":"Introduction to Finance",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+    "fullName": "Dr. Maria Garcia",
+    "firstName": "Maria",
+    "lastName": "Garcia",
+    "email": "garMar@onlineC+.edu",
+    "school": "School of Computer Science",
+    "courses":"Data Science with Python",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  },
+  {
+    "fullName": "Dr. Jane Lee",
+    "firstName": "Jane",
+    "lastName": "Lee",
+    "email": "leeJan@onlineC+.edu",
+    "school": "School of Humanities",
+    "courses":"World History",
+    "pre_nominals": "Dr.",
+    "idImage": "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+  }
+]

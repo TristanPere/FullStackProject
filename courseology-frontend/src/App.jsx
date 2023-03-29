@@ -3,18 +3,28 @@ import CoursesPage from "./Pages/CoursesPage/coursesPage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import CourseCardPage from "./Pages/CourseCardPage/CourseCardPage";
 import TitleBar from "./Components/TitleBar/titleBar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 function App() {
-  const [allCourses, setAllCourses] = useState([]);
-  const getAllCourses = async () => {
-    let data = [];
-    let url = `localhost:8080/courses`;
+  const [courses, setCourses] = useState([]);
+  const [professors, setProfessors] = useState([]);
+  const getCourses = async () => {
+    let url = `http://localhost:8080/courses?limit=50`;
     const res = await fetch(url);
-    data = await res.json();
-    setAllCourses(data);
+    const data = await res.json();
+    setCourses(data);
   };
-  getAllCourses();
-  console.log(allCourses);
+  const getProfessors = async () => {
+    let url = `http://localhost:8080/professors?limit=50`;
+    const res = await fetch(url);
+    const data = await res.json();
+    setProfessors(data);
+  };
+  useEffect(() => {
+    getCourses();
+    getProfessors();
+  }, []);
+  console.log(courses);
+  console.log(professors);
   return (
     <Router>
       <div className="App">

@@ -1,12 +1,17 @@
-package com.example.Java_SpringBoot_Backend;
+package com.example.Java_SpringBoot_Backend.Courses;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.UUID;
 
+@Entity
 public class Course {
-    private UUID uuid = UUID.randomUUID();
-    private String stringUUID = uuid.toString();
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long uuid;
     private String courseTitle;
     private String professor;
     private LocalDate startDate;
@@ -17,10 +22,10 @@ public class Course {
     private  long totalSeats;
     private long seatsFilled;
     private long contactHours;
-    private ArrayList<String> schools;
-    private ArrayList<String> students;
+    private String school;
 
-    public Course(String courseTitle, String professor, LocalDate startDate, LocalDate endDate, String season, String description, String studyType, long totalSeats, long seatsFilled, long contactHours, ArrayList<String> schools ) {
+    public Course(){};
+    public Course(String courseTitle, String professor, LocalDate startDate, LocalDate endDate, String season, String description, String studyType, long totalSeats, long seatsFilled, long contactHours, String school ) {
         this.courseTitle = courseTitle;
         this.professor = professor;
         this.startDate = startDate;
@@ -31,19 +36,13 @@ public class Course {
         this.totalSeats = totalSeats;
         this.seatsFilled = seatsFilled;
         this.contactHours = contactHours;
-        this.schools = schools;
+        this.school = school;
     }
-
-    public UUID getUuid() {
+    public Long getUuid() {
         return uuid;
     }
-
-    public void setNewUuid() {
-        this.uuid = UUID.randomUUID();
-    }
-
-    public String getStringUUID() {
-        return stringUUID;
+    public void setUuid(Long uuid) {
+        this.uuid = uuid;
     }
 
     public String getCourseTitle() {
@@ -126,19 +125,11 @@ public class Course {
         this.contactHours = contactHours;
     }
 
-    public ArrayList<String> getSchools() {
-        return schools;
+    public String getSchool() {
+        return school;
     }
 
-    public void setSchools(ArrayList<String> schools) {
-        this.schools = schools;
-    }
-
-    public ArrayList<String> getStudents() {
-        return students;
-    }
-
-    public void setStudents(ArrayList<String> students) {
-        this.students = students;
+    public void setSchool(String school) {
+        this.school = school;
     }
 }
