@@ -1,10 +1,6 @@
 import React from "react";
 import "./courseCard.scss";
 const courseCard = ({ course }) => {
-  let schools = course.school[0];
-  if (course.school.length >= 2) {
-    schools = schools + ", " + course.school[1];
-  }
   const validDate = () => {
     const today = new Date();
     let courseDate = course.startDate.split("-");
@@ -24,7 +20,7 @@ const courseCard = ({ course }) => {
   const num = Math.floor(Math.random() * 13 + 1);
   const titleJSX = (num, side) => {
     let classNameString = "";
-    if (side == "front") {
+    if (side === "front") {
       classNameString = "courseCard__title--front courseCard__title--front--";
     } else {
       classNameString =
@@ -40,7 +36,7 @@ const courseCard = ({ course }) => {
           <div className="courseCard">
             {titleJSX(num, "front")}
             <div className="courseCard__info">
-              <div className="courseCard--schools">Schools: {schools}</div>
+              <div className="courseCard--schools">Schools: {course.school}</div>
               <div className="courseCard--dates">
                 Start Date: {course.startDate} <br /> End Date: {course.endDate}
               </div>
@@ -61,7 +57,7 @@ const courseCard = ({ course }) => {
               <div className="courseCard-Back--professors">
                 Professor(s): {course.professor}
               </div>
-              <div className="courseCard-Back--schools">Schools: {schools}</div>
+              <div className="courseCard-Back--schools">Schools: {course.school}</div>
               <div className="courseCard-Back--foot">
                 <div className="courseCard-Back--term">
                   {course.season}: {course.studyType.slice(0,1).toUpperCase() + course.studyType.slice(1)} {weeksOfCourse()} Weeks

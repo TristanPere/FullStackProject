@@ -9,13 +9,13 @@ const dropDown = () => {
         <Link to="/">
           <a>Home Page</a>
         </Link>
-        <Link to="/">
+        <Link to="/professors">
           <a>All Professors</a>
         </Link>
         <Link to="/">
           <a>All Student</a>
         </Link>
-        <Link to="/course">
+        <Link to="/courses">
           <a>CourseCardPage</a>
         </Link>
       </div>

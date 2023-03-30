@@ -1,5 +1,5 @@
 import React from "react";
-import "./CourseCardPage.scss";
+import "./CoursePage.scss";
 import { mockData } from "../../database";
 import CourseCard from "../../Components/CourseCard/CourseCard";
 const CourseCardPage = () => {
@@ -11,10 +11,13 @@ const CourseCardPage = () => {
   //   }
   // };
   const weeksOfCourse = () => {
-    return Math.ceil(Math.abs(new Date(course.endDate) - new Date(course.startDate)) / (1000 * 60 * 60 * 24 * 7))
-  }
+    return Math.ceil(
+      Math.abs(new Date(course.endDate) - new Date(course.startDate)) /
+        (1000 * 60 * 60 * 24 * 7)
+    );
+  };
   const course = mockData.course;
-   const schools = course.school.join(", ");
+  const schools = course.school.join(", ");
   return (
     <>
       <div>
@@ -31,7 +34,9 @@ const CourseCardPage = () => {
         </div>
         <div>{course.description}</div>
         <div>{course.professor}</div>
-        <div>{course.seatsfilled}/{course.totalSeats}</div>
+        <div>
+          {course.seatsfilled}/{course.totalSeats}
+        </div>
         <div>{schools}</div>
       </div>
     </>

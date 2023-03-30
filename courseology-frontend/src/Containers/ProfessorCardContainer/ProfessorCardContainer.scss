@@ -1,0 +1,15 @@
+.professorsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.cardHolder {
+  width: min-content;
+  height: fit-content;
+  transition: all 0.2s ease-in-out;
+}
+.cardHolder:hover {
+  transform: scale(1.1);
+}

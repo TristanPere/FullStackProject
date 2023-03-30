@@ -1,15 +1,14 @@
 import React from "react";
-import "./switcher.scss"
-const switcher = ({handleSwitch}) => {
-  
+import "./switcher.scss";
+const switcher = ({ leftOption, rightOption, handleSwitch }) => {
   return (
-    <div>
-       Full-time
+    <div className="switchBox">
+      {leftOption}
       <label className="switch">
-        <input type="checkbox" onClick={handleSwitch}/>
+        <input type="checkbox" onClick={handleSwitch} defaultChecked />
         <span className="slider round"></span>
       </label>
-       Part-time
+      {rightOption}
     </div>
   );
 };

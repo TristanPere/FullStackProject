@@ -30,13 +30,15 @@ export const mockData = {
     graduated: false,
   },
   professor: {
-    professorID: 0,
-    firstName: "Bavalon",
-    lastName: "Shinlorav",
-    email: "bavShin@email.com",
-    school: "Liberal Arts",
-    courses: ["Intro to Courses"],
-    idImage: "stockImage",
-    pre_nominals: "Dr",
+    id: 0,
+    fullName: "Dr. Michael Lee",
+    firstName: "Michael",
+    lastName: "Lee",
+    email: "leeMic@onlineC+.edu",
+    school: "School of Chemistry",
+    courses: "School of Organic Chemistry",
+    pre_nominals: "Dr.",
+    idImage:
+      "https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg",
   },
 };

@@ -1,15 +1,18 @@
-import React from "react";
-import { mockcourse } from "../../courseJSON";
+import React, { useEffect,  useState } from "react";
 import "./SelectDropDown.scss";
-const selectDropDown = ({ type , handleFilter }) => {
-  const terms = ["Spring", "Summer", "Autumn", "Winter"];
+const SelectDropDown = ({ type , handleFilter }) => {
+  const terms = ["Spring", "Summer", "Fall", "Winter"];
   let optionsJSX;
   let placeholderJSX;
-  if (type == "school") {
-    const schools = mockcourse.courses.map((course)=>{
-      return course.school
-    })
-    optionsJSX = [...new Set(schools.join(",").split(","))].map((school, index) => {
+  const [schools, setSchools] = useState([]);
+  const getSchools = async () => {
+    let url = `http://localhost:8080/course/schools`;
+    const res = await fetch(url);
+    const data = await res.json();
+    setSchools(data);
+  };
+  if (type === "school") {
+    optionsJSX = schools.map((school, index) => {
       const id = `${school}${index}`;
       return (
         <option value={school} key={id}>
@@ -37,6 +40,9 @@ const selectDropDown = ({ type , handleFilter }) => {
       </option>
     );
   }
+  useEffect(()=>{
+    getSchools()
+  },[])
   return (
     <div>
       <select onChange={handleFilter}>
@@ -47,4 +53,4 @@ const selectDropDown = ({ type , handleFilter }) => {
   );
 };
 
-export default selectDropDown;
+export default SelectDropDown;
