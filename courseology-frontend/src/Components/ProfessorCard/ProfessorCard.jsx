@@ -1,14 +1,17 @@
-import { React } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./ProfessorCard.scss";
 const ProfessorCard = ({ professor }) => {
   return (
     professor && (
       <div className="professorCard">
-        <img
-          className="professorCard__image"
-          src={`${professor.idImage}`}
-          alt="photo"
-        />
+        <Link to={`/professor/${professor.uuid}`}>
+          <img
+            className="professorCard__image"
+            src={`${professor.idImage}`}
+            alt="photo"
+          />
+        </Link>
         <div className="professorCard__details">
           {professor.fullName}
           <br /> {professor.email}

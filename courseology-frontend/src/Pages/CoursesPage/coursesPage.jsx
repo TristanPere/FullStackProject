@@ -48,7 +48,7 @@ const CoursesPage = ({ courses }) => {
     }
   };
   const filterStudyType = (event) => {
-    if (event.target.value) {
+    if (event.target.checked) {
       setFilter({
         course: filter.course,
         school: filter.school,

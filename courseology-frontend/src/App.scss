@@ -1,6 +1,10 @@
-body{
-    background:#a48dad;
-    background-image: URL("./images/backGround.png");
-    background-size: cover;
-    background-blend-mode: lighten ;
+body {
+  background: #a48dad;
+  background-image: URL("./images/backGround.png");
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+* {
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia,
+    serif;
 }

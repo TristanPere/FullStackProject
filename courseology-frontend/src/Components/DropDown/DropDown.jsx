@@ -6,17 +6,17 @@ const dropDown = () => {
     <div className="dropdown">
       <button className="dropbtn">Menu</button>
       <div className="dropdown-content">
-        <Link to="/">
-          <a>Home Page</a>
+        <Link to="/courses">
+          <a>View Courses</a>
         </Link>
         <Link to="/professors">
-          <a>All Professors</a>
+          <a>View Professors</a>
         </Link>
-        <Link to="/">
-          <a>All Student</a>
+        <Link to="/courses/create">
+          <a>Add Course</a>
         </Link>
-        <Link to="/courses">
-          <a>CourseCardPage</a>
+        <Link to="/professors/create">
+          <a>Add Professor</a>
         </Link>
       </div>
     </div>

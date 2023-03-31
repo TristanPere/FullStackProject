@@ -1,45 +1,55 @@
 import React from "react";
 import "./CoursePage.scss";
-import { mockData } from "../../database";
-import CourseCard from "../../Components/CourseCard/CourseCard";
-const CourseCardPage = () => {
-  // const availableJSX = () => {
-  //   if (course.available) {
-  //     return <div className="courseCard--vailability">Available</div>;
-  //   } else {
-  //     return <div className="courseCard--vailability">Un-Available</div>;
-  //   }
-  // };
+import { useParams } from "react-router-dom";
+const CourseCardPage = ({ courses }) => {
+  const { courseId } = useParams();
+  const course = courses.filter((course) => course.uuid == courseId)[0];
+  
+  const validDate = () => {
+    const today = new Date();
+    let courseDate = course.startDate.split("-");
+    courseDate = new Date(courseDate);
+    return courseDate > today;
+  };
   const weeksOfCourse = () => {
     return Math.ceil(
       Math.abs(new Date(course.endDate) - new Date(course.startDate)) /
         (1000 * 60 * 60 * 24 * 7)
     );
   };
-  const course = mockData.course;
-  const schools = course.school.join(", ");
+  const availableJSX = () => {
+    if (course.totalSeats > course.seatsFilled && validDate()) {
+      return <div className="courseCard--vailability">Available</div>;
+    } else {
+      return <div className="courseCard--vailability">Un-Available</div>;
+    }
+  };
+  
   return (
-    <>
-      <div>
-        <h1 className="courseTitle">{course.courseTitle}</h1>
-        <div className="courseHours">
-          <div className="--dates">
-            Start Date: {course.startDate} <br /> End Date: {course.endDate}
-          </div>
-          <div className="courseHours--term">
-            {course.season}: {course.studyType}
-            <br />
-            {course.contactHours}
-          </div>
-        </div>
-        <div>{course.description}</div>
-        <div>{course.professor}</div>
+    course && (
+      <>
         <div>
-          {course.seatsfilled}/{course.totalSeats}
+          <h1 className="courseTitle">{course.courseTitle}</h1>
+          <div className="courseHours">
+            <div className="--dates">
+              Start Date: {course.startDate} <br /> End Date: {course.endDate}
+            </div>
+            <div className="courseHours--term">
+              {course.season}: {course.studyType}
+              <br />
+              {course.contactHours}
+            </div>
+          </div>
+          <div>{course.description}</div>
+          <div>{weeksOfCourse()}</div>
+          {availableJSX()}
+          <div>
+            {course.seatsfilled}/{course.totalSeats}
+          </div>
+          <div>{course.school}</div>
         </div>
-        <div>{schools}</div>
-      </div>
-    </>
+      </>
+    )
   );
 };
 

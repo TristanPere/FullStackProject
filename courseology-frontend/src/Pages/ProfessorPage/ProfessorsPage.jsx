@@ -1,6 +1,13 @@
 import { React, useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import CourseCardContainer from "../../Containers/CourseCardContainer/CourseCardContainer";
-const ProfessorPage = ({ professor }) => {
+import "./ProfessorPage.scss";
+const ProfessorPage = ({ professors }) => {
+  const { professorId } = useParams();
+  const professor = professors.filter(
+    (professor) => professor.uuid == professorId
+  )[0];
+
   const [courses, setCourses] = useState([]);
   const getCourses = async () => {
     if (professor) {
@@ -17,17 +24,16 @@ const ProfessorPage = ({ professor }) => {
   useEffect(() => {
     getCourses();
   }, [professor]);
-  console.log(courses);
   return (
     professor && (
       <div className="profCard">
-        <img src={`${professor.idImage}`} alt="photo" srcset="" />
+        <img src={`${professor.idImage}`} alt="photo" srcSet="" />
         <div>
           {professor.fullName}
           <br /> {professor.email}
         </div>
         <div>{professor.school}</div>
-        <div>
+        <div className="courseCards">
           <CourseCardContainer courses={courses} />
         </div>
       </div>
