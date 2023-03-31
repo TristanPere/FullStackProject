@@ -11,7 +11,9 @@ import CreateProfessor from "./Containers/CreateProfessor/CreateProfessor";
 
 function App() {
   const [courses, setCourses] = useState([]);
+
   const [professors, setProfessors] = useState([]);
+
   const getCourses = async () => {
     let url = `http://localhost:8080/courses?limit=50`;
     const res = await fetch(url);
@@ -28,6 +30,7 @@ function App() {
     getCourses();
     getProfessors();
   }, []);
+
   return (
     <Router>
       <div className="App">

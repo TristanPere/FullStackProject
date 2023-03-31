@@ -49,7 +49,7 @@ public class ProfessorsController {
         return ResponseEntity.status(HttpStatus.OK).body(professorsServices.getRandomProfessor());
     }
 
-    @GetMapping("professor/{uuid}")
+    @GetMapping("/professor/{uuid}")
     public ResponseEntity<Professor> getProfessorById(@PathVariable Long uuid) {
         return ResponseEntity.status(HttpStatus.OK).body(professorsServices.getProfessorByStringUuid(uuid));
     }

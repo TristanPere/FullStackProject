@@ -25,8 +25,8 @@ public class Professor {
     public Professor() {
     };
 
-    public Professor(String fullName, String firstName, String lastName, String email, String school, String courses, String idImage, String pre_nominals) {
-        this.fullName = fullName;
+    public Professor(String firstName, String lastName, String email, String school, String courses, String idImage, String pre_nominals) {
+        this.fullName = constructFullName(firstName, lastName, pre_nominals);
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -34,6 +34,9 @@ public class Professor {
         this.courses = courses;
         this.idImage = idImage;
         this.pre_nominals = pre_nominals;
+    }
+    private String constructFullName(String firstName, String lastName, String pre_nominals) {
+        return pre_nominals + " " + firstName + " " + lastName;
     }
 
     public Long getUuid() {

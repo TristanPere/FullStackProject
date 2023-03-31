@@ -38,6 +38,19 @@ public class Course {
         this.contactHours = contactHours;
         this.school = school;
     }
+    public Course(String courseTitle, String professor, LocalDate startDate, LocalDate endDate, String season, String description, String studyType, long totalSeats, long contactHours, String school ) {
+        this.courseTitle = courseTitle;
+        this.professor = professor;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.season = season;
+        this.description = description;
+        this.studyType = studyType;
+        this.totalSeats = totalSeats;
+        this.seatsFilled = 0;
+        this.contactHours = contactHours;
+        this.school = school;
+    }
     public Long getUuid() {
         return uuid;
     }

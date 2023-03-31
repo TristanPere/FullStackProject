@@ -18,7 +18,7 @@ public class CoursesController {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(exception.getMessage());
     }
     // CREATE
-    @PostMapping("/course")
+    @PostMapping("/courses/create")
     public ResponseEntity<Course> createCourse(@RequestBody Course course) {
         coursesServices.addCourse(course);
         return ResponseEntity.status(HttpStatus.CREATED).body(course);
@@ -47,11 +47,11 @@ public class CoursesController {
         return ResponseEntity.status(HttpStatus.OK).body(coursesServices.getRandomCourse());
     }
 
-    @GetMapping("course/{uuid}")
+    @GetMapping("/course/{uuid}")
     public ResponseEntity<Course> getCourseById(@PathVariable Long uuid) {
         return ResponseEntity.status(HttpStatus.OK).body(coursesServices.getCourseByStringUUID(uuid));
     }
-    @GetMapping("course/schools")
+    @GetMapping("/course/schools")
     public ResponseEntity<List<String>> getSchools() {
         return ResponseEntity.status(HttpStatus.OK).body(coursesServices.getDistinctSchools());
     }
